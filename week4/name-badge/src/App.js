@@ -91,7 +91,7 @@ render(){
   const isEnabled = this.canBeSubmitted();
   let formError = {}
   if(!isEnabled){
-    this.state.formError = "Please make sure each field is completed with at least 2 characters."
+    this.state.formError = "Please make sure each field is completed with at least 3 or more characters."
   }else{
     this.state.formError = ""
   }
