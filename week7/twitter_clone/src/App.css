@@ -1,0 +1,128 @@
+.App {
+  text-align: center;
+}
+.header { 
+  grid-area: header;
+  font-size: 15px;
+  padding: 15px;
+  text-align: center;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+
+}
+.subheader {
+  grid-area: subheader;
+}
+.left { 
+  grid-area: left; 
+  font-size: 30px;
+  text-align: center; 
+}
+.main { 
+  grid-area: main;
+ 
+  
+ }
+
+ .main div {
+  padding-left: 25px;
+  padding-right: 25px;
+ }
+.right { 
+  
+  grid-area: right;
+  
+   }
+
+   .right img {
+     margin: 10px;
+   }
+
+.form-group{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.tweet_input{
+  border:none;
+}
+
+#side_image{
+  align-self: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'left header header header header right'
+    'left subheader subheader subheader subheader right'
+    'left main main main main right'
+    'left main main main main right';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+ .grid-container > div {
+  background-color:white;
+  
+  padding: 20px;
+  border: solid lightgray 1px;
+}
+ 
+div.font {
+  padding: 25px;
+
+}
+.fonts>div:hover {
+  color: blue;
+
+}
+.Login {
+  padding: 60px 0;
+}
+
+.Login form {
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+.App {
+  margin-top: 15px;
+}
+
+.App .navbar-brand {
+  font-weight: bold;
+}
+
+.fonts{
+  display:grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  padding: 10px;
+    
+}
+
+.list_items{
+  display:grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  text-align: center;
+    
+}
+
+.tweet_grid{
+  display: grid;
+  grid-template-columns: 20% 80%;
+  align-content: space-evenly;
+  justify-content: space-around;
+  
+}
+
+.left a:link {
+  text-decoration: none;
+}
+
+.left a:hover {
+  background-color: turquoise;
+}
+
